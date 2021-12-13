@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
+  m_Name: Window Udon Graph Program Asset
+  m_EditorClassIdentifier: 
+  serializedUdonProgramAsset: {fileID: 11400000, guid: dcd67d160bb228f4ba1568aefa35df4c,
+    type: 2}
+  udonAssembly: ".data_start\r\n\r\n    .export VRCWorldE\r\n    \r\n    __instance_0:
+    %VRCUdonUdonBehaviour, this\r\n    __symbolName_0: %SystemString, null\r\n   
+    __value_0: %SystemObject, null\r\n    __String_0: %SystemString, null\r\n   
+    __Boolean_0: %SystemBoolean, null\r\n    VRCWorldE: %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, VRCWorldE\r\n       
+    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __String_0\r\n        PUSH,
+    __symbolName_0\r\n        COPY\r\n        PUSH, __Boolean_0\r\n        PUSH,
+    __value_0\r\n        COPY\r\n        PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n       
+    PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+  assemblyError: 
+  graphData:
+    name: 
+    description: 
+    nodes:
+    - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
+      uid: bbfcf23c-2a85-4117-bc58-7cc4212b89e1
+      position: {x: -2779.412, y: -1153.1709}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|VRCWorldE
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Event_Interact
+      uid: 8367b230-a1a3-432a-a30e-3a64c90523b3
+      position: {x: 819.3096, y: 149.42531}
+      nodeUIDs: []
+      flowUIDs:
+      - e4e1abd7-bf32-4fc4-a9f9-60e604651781
+      nodeValues: []
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
+      uid: e4e1abd7-bf32-4fc4-a9f9-60e604651781
+      position: {x: 1127.8593, y: 251.60811}
+      nodeUIDs:
+      - 67c45f54-4963-4092-b9a9-60aca8a4cee4
+      - d37587bf-9b8c-4eef-a51c-652793d9ec62
+      - d0657b2e-9479-48a4-a62e-99d69ae8a011
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemString
+      uid: d37587bf-9b8c-4eef-a51c-652793d9ec62
+      position: {x: 748.7093, y: 366.40814}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|aed_q
+    - fullName: Const_SystemBoolean
+      uid: d0657b2e-9479-48a4-a62e-99d69ae8a011
+      position: {x: 825.45935, y: 481.6161}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
+    - fullName: Get_Variable
+      uid: 67c45f54-4963-4092-b9a9-60aca8a4cee4
+      position: {x: 687.60925, y: 249.4081}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|bbfcf23c-2a85-4117-bc58-7cc4212b89e1
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    updateOrder: 0
+  graphElementData: []
+  viewTransform:
+    position: {x: -112.8, y: -1.6}
+    scale: 0.65751624
+  version: 1.0.0
+  showAssembly: 0
